@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:${GRADLE_VERSION}"
+    }
+}
+
+ext {
+    minSdkVersion = 14
+    targetSdkVersion = 24
+
+    rxjava = "1.1.5"
+    rxandroid = "1.2.0"
+    rxbinding = "0.4.0"
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

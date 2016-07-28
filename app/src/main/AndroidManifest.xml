@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.github.oncizl.demo"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="Android"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<service android:name=".AndroidService"/>
+
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".rx.RxJavaActivity"
+		          android:label="Rx"/>
+
+		<activity
+			android:name=".md.DesignActivity"
+			android:label="MD"
+			android:theme="@style/AppTheme.Navigation"/>
+		<activity
+			android:name=".md.AppBarActivity"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".md.BottomSheetActivity"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".md.SnackbarActivity"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".md.TabLayoutActivity"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".md.TextInputLayoutActivity"
+			android:theme="@style/AppTheme.NoActionBar"/>
+	</application>
+
+</manifest>

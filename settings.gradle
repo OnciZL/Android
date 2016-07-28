@@ -1,0 +1,1 @@
+include ':app', ':header-manager', ':recycler-item-click', ':recycler-adapter', ':ms903', ':helper', ':daemon', ':bluetooth'

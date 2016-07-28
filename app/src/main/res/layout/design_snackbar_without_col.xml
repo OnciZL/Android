@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/content_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="16dp"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_short"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Snackbar (short message)"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_short_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Snackbar (short message + action)"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Snackbar (long message)"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_long_action1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Snackbar (long message + action)"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_long_action2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Snackbar (long message + long action)"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/navigation_item_1"
+			android:checked="true"
+			android:icon="@mipmap/ic_launcher"
+			android:title="Item 1"/>
+		<item
+			android:id="@+id/navigation_item_2"
+			android:icon="@mipmap/ic_launcher"
+			android:title="Item 2"/>
+		<item
+			android:id="@+id/navigation_item_3"
+			android:icon="@mipmap/ic_launcher"
+			android:title="Item 3"
+			app:actionLayout="@layout/design_action_layout"/>
+		<item
+			android:id="@+id/navigation_item_disabled"
+			android:enabled="false"
+			android:icon="@mipmap/ic_launcher"
+			android:title="Item 4"/>
+		<item
+			android:id="@+id/navigation_item_invisible"
+			android:icon="@mipmap/ic_launcher"
+			android:title="Item 5"
+			android:visible="false"/>
+	</group>
+
+	<item
+		android:id="@+id/navigation_sub_header"
+		android:title="Sub Header">
+		<menu>
+			<item
+				android:id="@+id/navigation_sub_item_1"
+				android:icon="@mipmap/ic_launcher"
+				android:title="Sub Item 1"/>
+			<item
+				android:id="@+id/navigation_sub_item_2"
+				android:icon="@mipmap/ic_launcher"
+				android:title="Sub Item 2"/>
+		</menu>
+	</item>
+
+	<group android:id="@+id/aligned_items">
+		<item
+			android:id="@+id/navigation_with_icon"
+			android:icon="@mipmap/ic_launcher"
+			android:title="Item with icon"/>
+		<item
+			android:id="@+id/navigation_without_icon"
+			android:title="Item without icon"/>
+	</group>
+
+</menu>

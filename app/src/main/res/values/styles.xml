@@ -1,0 +1,28 @@
+<resources>
+
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">@color/material_red</item>
+		<item name="colorPrimaryDark">@color/material_red</item>
+		<item name="colorAccent">@color/material_red</item>
+		<item name="actionBarSize">48dp</item>
+	</style>
+
+	<style name="AppTheme.DarkActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/material_red</item>
+		<item name="colorPrimaryDark">@color/material_red</item>
+		<item name="colorAccent">@color/material_red</item>
+		<item name="actionBarSize">48dp</item>
+	</style>
+
+	<style name="AppTheme.NoActionBar" parent="AppTheme.DarkActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="AppTheme.Navigation" parent="AppTheme.NoActionBar"/>
+
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

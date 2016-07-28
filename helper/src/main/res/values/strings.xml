@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="permission_group_calendar">日历</string>
+	<string name="permission_group_camera">相机</string>
+	<string name="permission_group_contacts">通讯录</string>
+	<string name="permission_group_location">位置信息</string>
+	<string name="permission_group_microphone">麦克风</string>
+	<string name="permission_group_phone">电话</string>
+	<string name="permission_group_sensors">身体传感器</string>
+	<string name="permission_group_sms">短信</string>
+	<string name="permission_group_storage">存储空间</string>
+
+	<string name="dialog_permission_title">请求权限</string>
+	<string name="dialog_permission_header">您的操作需要以下权限：</string>
+	<string name="dialog_permission_footer">请到设置中找到您的应用，授予相应权限</string>
+	<string name="dilaog_permission_confirm">确定</string>
+	<string name="dilaog_permission_cancel">取消</string>
+</resources>

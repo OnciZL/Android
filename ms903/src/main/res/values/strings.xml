@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="ms903_empty_tips">暂无任何数据记录</string>
+	<string name="ms903_empty_action">刷新试试</string>
+
+	<string name="ms903_reload_tips">数据加载失败，点击下面按钮重新加载</string>
+	<string name="ms903_reload_action">重新加载</string>
+
+</resources>

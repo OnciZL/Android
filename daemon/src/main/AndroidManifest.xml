@@ -1,0 +1,105 @@
+<manifest package="com.github.oncizl.daemon"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<application
+		android:allowBackup="true"
+		android:persistent="true">
+
+		<service android:name=".service.XqService"/>
+		<service android:name=".service.XService"/>
+		<service
+			android:name=".service.DService"
+			android:process=":xq"/>
+
+		<receiver android:name=".receiver.DaemonBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+				<action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+				<action android:name="android.intent.action.AIRPLANE_MODE"/>
+				<action android:name="android.intent.action.APPLICATION_RESTRICTIONS_CHANGED"/>
+				<action android:name="android.intent.action.BATTERY_CHANGED"/>
+				<action android:name="android.intent.action.BATTERY_LOW"/>
+				<action android:name="android.intent.action.BATTERY_OKAY"/>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<action android:name="android.intent.action.CAMERA_BUTTON"/>
+				<action android:name="android.intent.action.CONFIGURATION_CHANGED"/>
+				<action android:name="android.intent.action.DATE_CHANGED"/>
+				<action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+				<action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+				<action android:name="android.intent.action.DOCK_EVENT"/>
+				<action android:name="android.intent.action.DREAMING_STARTED"/>
+				<action android:name="android.intent.action.DREAMING_STOPPED"/>
+				<action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"/>
+				<action android:name="android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"/>
+				<action android:name="android.intent.action.GTALK_CONNECTED"/>
+				<action android:name="android.intent.action.GTALK_DISCONNECTED"/>
+				<action android:name="android.intent.action.HEADSET_PLUG"/>
+				<action android:name="android.intent.action.INPUT_METHOD_CHANGED"/>
+				<action android:name="android.intent.action.LOCALE_CHANGED"/>
+				<action android:name="android.intent.action.MANAGE_PACKAGE_STORAGE"/>
+				<action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+				<action android:name="android.intent.action.MEDIA_BUTTON"/>
+				<action android:name="android.intent.action.MEDIA_CHECKING"/>
+				<action android:name="android.intent.action.MEDIA_EJECT"/>
+				<action android:name="android.intent.action.MEDIA_MOUNTED"/>
+				<action android:name="android.intent.action.MEDIA_NOFS"/>
+				<action android:name="android.intent.action.MEDIA_REMOVED"/>
+				<action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+				<action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE"/>
+				<action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+				<action android:name="android.intent.action.MEDIA_SHARED"/>
+				<action android:name="android.intent.action.MEDIA_UNMOUNTABLE"/>
+				<action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+				<action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+				<action android:name="android.intent.action.REBOOT"/>
+				<action android:name="android.intent.action.SCREEN_OFF"/>
+				<action android:name="android.intent.action.SCREEN_ON"/>
+				<action android:name="android.intent.action.TIME_SET"/>
+				<action android:name="android.intent.action.TIME_TICK"/>
+				<action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+				<action android:name="android.intent.action.UID_REMOVED"/>
+				<action android:name="android.intent.action.USER_PRESENT"/>
+				<action android:name="android.intent.action.WALLPAPER_CHANGED"/>
+
+				<action android:name="android.hardware.action.NEW_PICTURE"/>
+				<action android:name="android.hardware.action.NEW_VIDEO"/>
+
+				<action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"/>
+				<action android:name="android.net.conn.INET_CONDITION_ACTION"/>
+
+				<action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+				<action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+
+				<action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"/>
+				<action android:name="android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED"/>
+				<action android:name="android.bluetooth.a2dp.profile.action.AVRCP_CONNECTION_STATE_CHANGED"/>
+				<action android:name="android.bluetooth.adapter.action.SCAN_MODE_CHANGED"/>
+				<action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+				<action android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED"/>
+				<action android:name="android.bluetooth.adapter.action.DISCOVERY_FINISHED"/>
+				<action android:name="android.bluetooth.adapter.action.LOCAL_NAME_CHANGED"/>
+				<action android:name="android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"/>
+				<action android:name="android.bluetooth.device.action.FOUND"/>
+				<action android:name="android.bluetooth.device.action.DISAPPEARED"/>
+				<action android:name="android.bluetooth.device.action.CLASS_CHANGED"/>
+				<action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+				<action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+				<action android:name="android.bluetooth.device.action.NAME_CHANGED"/>
+				<action android:name="android.bluetooth.device.action.ALIAS_CHANGED"/>
+				<action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED"/>
+				<action android:name="android.bluetooth.device.action.SDP_RECORD"/>
+				<action android:name="android.bluetooth.device.action.UUID"/>
+				<action android:name="android.bluetooth.device.action.MAS_INSTANCE"/>
+				<action android:name="android.bluetooth.device.action.NAME_FAILED"/>
+				<action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+				<action android:name="android.bluetooth.device.action.PAIRING_CANCEL"/>
+				<action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_REQUEST"/>
+				<action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_REPLY"/>
+				<action android:name="android.bluetooth.device.action.CONNECTION_ACCESS_CANCEL"/>
+			</intent-filter>
+		</receiver>
+
+	</application>
+
+</manifest>

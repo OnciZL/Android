@@ -7,5 +7,5 @@
 /*/build
 *.apk
 /captures
+../gradle.properties
 /import-summary.txt
-/gradle.properties

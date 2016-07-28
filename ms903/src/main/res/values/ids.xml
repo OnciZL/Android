@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<item name="ms903_image" type="id"/>
+	<item name="ms903_tips" type="id"/>
+	<item name="ms903_action" type="id"/>
+
+</resources>
