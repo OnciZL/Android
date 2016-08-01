@@ -118,14 +118,6 @@ public abstract class RecyclerAdapter<VH extends RecyclerView.ViewHolder> extend
 		}
 	}
 
-	public int getItemViewTypeCompat(int position) {
-		return 0;
-	}
-
-	public int getItemViewTypeCountCompat() {
-		return 1;
-	}
-
 	public int getViewHolderType(RecyclerView.ViewHolder holder) {
 		int position = holder.getAdapterPosition();
 		int headerCount = mHeaderList.size();
@@ -161,6 +153,14 @@ public abstract class RecyclerAdapter<VH extends RecyclerView.ViewHolder> extend
 			return position - headerCount - contentCount;
 		}
 		return -1;
+	}
+
+	int getItemViewTypeCompat(int position) {
+		return 0;
+	}
+
+	int getItemViewTypeCountCompat() {
+		return 1;
 	}
 
 	public abstract VH onCreateViewHolderCompat(ViewGroup parent, int viewType);
