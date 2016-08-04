@@ -14,6 +14,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.github.oncizl.daemon.service.DService;
+import com.github.oncizl.demo.bluetooth.BluetoothActivity;
 import com.github.oncizl.demo.md.DesignActivity;
 import com.github.oncizl.demo.rx.RxJavaActivity;
 import com.github.oncizl.header.HeaderCallback;
@@ -23,6 +24,7 @@ import com.github.oncizl.recycleradapter.OnLoadMoreListener;
 import com.github.oncizl.recycleradapter.RecyclerAdapter;
 import com.github.oncizl.recycleritemclick.OnRecyclerItemClickListener;
 import com.github.oncizl.widget.MS903;
+import com.github.oncizl.widget.OnActionListener;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 				.dot(HeaderManager.V_DOT_RIGHT_0);
 
 		mMS903 = (MS903) findViewById(R.id.ms903);
-		mMS903.setOnActionListener(new MS903.OnActionListener() {
+		mMS903.setOnActionListener(new OnActionListener() {
 			@Override
 			public void onAction(View view) {
 
@@ -115,13 +117,16 @@ public class MainActivity extends AppCompatActivity {
 						startActivity(new Intent(MainActivity.this, RxJavaActivity.class));
 					} else if (name.equals("support material design")) {
 						startActivity(new Intent(MainActivity.this, DesignActivity.class));
+					} else if (name.equals("Bluetooth")) {
+						BluetoothActivity.start(MainActivity.this);
 					}
 				}
 			}
 		});
 		list.add("RxJava");
 		list.add("support material design");
-		adapter.addHeader(getLayoutInflater().inflate(R.layout.activity_main_list_header, recyclerView, false));
+		list.add("Bluetooth");
+//		adapter.addHeader(getLayoutInflater().inflate(R.layout.activity_main_list_header, recyclerView, false));
 		MoreHelper helper = new MoreHelper(recyclerView);
 		helper.setOnLoadMoreListener(new OnLoadMoreListener() {
 			@Override

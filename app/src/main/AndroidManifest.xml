@@ -41,6 +41,9 @@
 		<activity
 			android:name=".md.TextInputLayoutActivity"
 			android:theme="@style/AppTheme.NoActionBar"/>
+
+		<activity android:name=".bluetooth.BluetoothActivity"
+		          android:label="Bluetooth"/>
 	</application>
 
 </manifest>

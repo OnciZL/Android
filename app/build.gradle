@@ -33,4 +33,5 @@ dependencies {
     compile project(':ms903')
     compile project(':helper')
     compile project(':daemon')
+    compile project(':bluetooth')
 }
